@@ -3,12 +3,13 @@ package fr.wildcodeschool.thewizardproject.controllers;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import fr.wildcodeschool.thewizardproject.models.WizardInterface;
 
+
 public class App {
 	
 	 public void start() {
 		 ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath*:applicationContext.xml");
 
-	        WizardInterface wizard = context.getBean("theDress", WizardInterface.class);
+	        WizardInterface wizard = context.getBean("gandalfId", WizardInterface.class);
 
 	        context.close();
 
